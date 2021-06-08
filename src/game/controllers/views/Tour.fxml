@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.controllers.TourController">
+    <children>
+        <Label fx:id="label" layoutX="219.0" layoutY="6.0" prefHeight="73.0" prefWidth="164.0" text="Выберите тур:" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Label>
+        <ListView fx:id="listView" layoutY="79.0" onMouseClicked="#handleMouseClick" prefHeight="254.0" prefWidth="600.0" />
+        <Button layoutX="275.0" layoutY="350.0" mnemonicParsing="false" onAction="#exitClick" text="Выход" />
+    </children>
+</AnchorPane>

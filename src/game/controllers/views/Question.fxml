@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.controllers.QuestionController">
+   <children>
+      <Button fx:id="submit" layoutX="430.0" layoutY="212.0" mnemonicParsing="false" onAction="#submitAnswer" text="Ответить" />
+      <Label fx:id="question_number" layoutX="229.0" layoutY="28.0" text="Вопрос №">
+         <font>
+            <Font size="26.0" />
+         </font></Label>
+      <TextField fx:id="userAnswer" layoutX="77.0" layoutY="212.0" prefHeight="25.0" prefWidth="328.0" promptText="Вводи сюда ответ" />
+      <ProgressBar fx:id="progressBar" layoutX="95.0" layoutY="315.0" prefHeight="18.0" prefWidth="411.0" progress="0.0" />
+      <Label fx:id="time" layoutX="236.0" layoutY="268.0" prefHeight="17.0" prefWidth="130.0" text="У вас осталось:" textAlignment="CENTER" />
+      <Label fx:id="progress" layoutX="117.0" layoutY="359.0" text="Прогресс по вопросам:" />
+      <ScrollPane fx:id="sp" layoutX="49.0" layoutY="66.0" prefHeight="137.0" prefViewportHeight="148.0" prefViewportWidth="139.0" prefWidth="517.0" AnchorPane.bottomAnchor="197.0" AnchorPane.leftAnchor="49.0" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="66.0">
+         <content>
+            <TextFlow fx:id="questionText" prefHeight="137.0" prefWidth="491.0">
+            <padding>
+               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+            </TextFlow>
+         </content>
+   </ScrollPane>
+      <Label fx:id="scoreField" layoutX="397.0" layoutY="359.0" prefHeight="17.0" prefWidth="66.0" text="Баллов: 0" />
+   </children>
+</AnchorPane>
