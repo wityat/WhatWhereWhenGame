@@ -35,11 +35,7 @@ import java.util.ResourceBundle;
 import java.util.function.Supplier;
 
 
-/**
- * FXML Controller class
- *
- * @author Phil
- */
+
 public class TournamentPackageController implements Initializable {
     @FXML
     Label label;
