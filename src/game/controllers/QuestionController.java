@@ -49,7 +49,7 @@ public class QuestionController implements Initializable {
 
 
     private Timeline timeline;
-    private Integer timeForQuestion = 5;
+    private Integer timeForQuestion = 60;
     private Integer seconds = timeForQuestion;
 
 
